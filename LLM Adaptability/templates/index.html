@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Questions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div>
+        <h1>Upload PDF to Generate Questions</h1>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <button type="submit">Upload</button>
+        </form>
+        {% if questions %}
+            <div class="questions">
+                <h2>Generated Questions and Answers:</h2>
+                <pre class="formmated">{{ questions }}</pre>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
