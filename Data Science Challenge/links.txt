@@ -1,0 +1,7 @@
+notebook:
+https://colab.research.google.com/drive/1XQ_N4KJ7jypvfStOvqCYneRJnyfENelF?usp=sharing
+
+gradio:
+https://16f8e5d605bf46a9c0.gradio.live/
+
+if gradio's link expired, regenerate in notebook.
